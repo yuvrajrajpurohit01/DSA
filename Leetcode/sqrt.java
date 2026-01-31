@@ -5,8 +5,6 @@ public class sqrt {
                 Scanner sc = new Scanner(System.in);
                 int x= sc.nextInt();
                 int sqrt = (int)(Math.floor(Math.sqrt(x)));
-                
-
                 System.out.println(sqrt);
 
 
