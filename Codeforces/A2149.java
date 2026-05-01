@@ -5,7 +5,7 @@ public class A2149 {
         int t = sc.nextInt();
         for (int i = 0; i < t ;i++) {
             int n = sc.nextInt();
-            int res = 0;
+            int r = 0;
             int[] arr = new int[n];
             int count = 0;
             for (int j = 0; j < arr.length; j++) {
@@ -17,13 +17,13 @@ public class A2149 {
                     count++;
                 }
                 else if (arr[k] == 0){
-                    res+=1;
+                    r+=1;
                 } 
             }
             if(count % 2 != 0){
-                res+=2;
+                r+=2;
             }
-            System.out.println(res);
+            System.out.println(r);
         }
     }
     
