@@ -1,23 +1,19 @@
 import java.util.*;
 
-public class maximumincrease {
+public class A584 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
-        int[] ans = new int[t];
-        for(int i = 0 ; i< t ; i++){
-            ans[i] = sc.nextInt();
-        }
-        int count = 1;
-        for(int j = 1 ; j<ans.length ; j++){
-            if(ans[j]>ans[j+1]){
-                count++;
-            }
-            else{
-                count = 0;
+        long n = sc.nextInt();
+        long t = sc.nextInt();
+        int lower = 10**n;
+        int higher = 10**(n+1);
+        for (int i = lower; i < higher ; i++) {
+            if(i%t == 0){
+                System.out.println(i);
+                break;
             }
         }
-        System.out.println(count);
     }
+    
 }
